@@ -1,4 +1,3 @@
-// System powiadomień typu toast - nowoczesny design z Tailwind CSS
 
 const toast = {
     // Główna funkcja wyświetlająca powiadomienie
