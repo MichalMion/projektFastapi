@@ -7,12 +7,12 @@
     <title>Filmy - Opinie o filmach</title>
     <meta name="description" content="Przeglądaj filmy i wystawiaj opinie">
 
-    <!-- Google Fonts -->
+    <!-- Czcionki Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS with Custom Config -->
+    <!-- Tailwind CSS z niestandardową konfiguracją -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -33,12 +33,11 @@
         }
     </script>
 
-    <!-- Custom CSS for animations and special effects -->
-    <!--<link rel="stylesheet" href="/css/custom.css">-->
+
 </head>
 
 <body class="bg-[#0a0e1a] text-[#f8fafc] font-['Inter',sans-serif] min-h-screen overflow-x-hidden">
-    <!-- Navigation -->
+    <!-- Nawigacja -->
     <nav
         class="bg-[rgba(30,39,64,0.6)] backdrop-blur-[10px] border-b border-white/10 py-6 sticky top-0 z-[100] shadow-[0_4px_16px_rgba(0,0,0,0.2)]">
         <div class="flex justify-between items-center max-w-[1200px] mx-auto px-6">
@@ -47,41 +46,41 @@
                 🎬 Filmy
             </div>
             <div class="flex gap-6 items-center" id="navLinks">
-                <!-- Links will be dynamically inserted -->
+                <!-- Linki zostaną wstawione dynamicznie -->
             </div>
         </div>
     </nav>
 
-    <!-- Main Content -->
+    <!-- Główna zawartość -->
     <main id="app">
-        <!-- Content will be dynamically inserted -->
+        <!-- Treść zostanie wstawiona dynamicznie -->
     </main>
 
-    <!-- Toast Container -->
+    <!-- Kontener powiadomień Toast -->
     <div id="toast-container" class="fixed bottom-6 right-6 z-[9999] flex flex-col items-end"></div>
 
-    <!-- Scripts - Load in correct order -->
-    <!-- Utilities -->
-    <script src="/js/utils/auth.js?v=2"></script>
-    <script src="/js/utils/api.js?v=2"></script>
-    <script src="/js/utils/router.js?v=2"></script>
+    <!-- Skrypty - Ładowanie w odpowiedniej kolejności -->
+    <!-- Narzędzia pomocnicze -->
+    <script src="/js/utils/auth.js"></script>
+    <script src="/js/utils/api.js"></script>
+    <script src="/js/utils/router.js"></script>
 
-    <!-- Components -->
-    <script src="/js/components/toast.js?v=2"></script>
-    <script src="/js/components/navbar.js?v=2"></script>
-    <script src="/js/components/movie-card.js?v=2"></script>
-    <script src="/js/components/review-card.js?v=2"></script>
-    <script src="/js/components/modal.js?v=2"></script>
+    <!-- Komponenty -->
+    <script src="/js/components/toast.js"></script>
+    <script src="/js/components/navbar.js"></script>
+    <script src="/js/components/movie-card.js"></script>
+    <script src="/js/components/review-card.js"></script>
+    <script src="/js/components/modal.js"></script>
 
-    <!-- Pages -->
-    <script src="/js/pages/home.js?v=2"></script>
-    <script src="/js/pages/auth.js?v=2"></script>
-    <script src="/js/pages/profile.js?v=2"></script>
-    <script src="/js/pages/movie-detail.js?v=2"></script>
-    <script src="/js/pages/admin.js?v=2"></script>
+    <!-- Strony -->
+    <script src="/js/pages/home.js"></script>
+    <script src="/js/pages/auth.js"></script>
+    <script src="/js/pages/profile.js"></script>
+    <script src="/js/pages/movie-detail.js"></script>
+    <script src="/js/pages/admin.js"></script>
 
-    <!-- Main App -->
-    <script src="/js/app.js?v=2"></script>
+    <!-- Główna aplikacja -->
+    <script src="/js/app.js"></script>
 </body>
 
 </html>
