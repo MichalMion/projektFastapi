@@ -1,6 +1,6 @@
 # Filmy Api- Instrukcja Uruchomienia
 
-##  Pobierz
+## 📋 Pobierz
 
 - Python 3.8+
 - PostgreSQL 12+
@@ -71,6 +71,55 @@ Otwórz przeglądarkę i wejdź na `http://localhost:5500`
 ## 📝 API Dokumentacja
 
 - znajduje się pod adresem: `http://localhost:8000/docs`
+## Funkcjonalności Aplikacji
+
+### Zwykły Użytkownik
+
+#### Konto
+- **Rejestracja** - Utworzenie nowego konta (username, email, hasło)
+- **Logowanie** - Zalogowanie się do systemu (zwraca token JWT)
+- **Wylogowanie** - Bezpieczne wylogowanie z aplikacji
+
+#### Przeglądanie
+- **Lista filmów** - Przeglądanie wszystkich filmów w bazie
+- **Szczegóły filmu** - Wyświetlanie informacji o filmie (tytuł, opis, rok, gatunek, plakat)
+- **Lista recenzji** - Przeglądanie wszystkich recenzji dla danego filmu
+
+#### Recenzje
+- **Dodawanie recenzji** - Wystawienie oceny (1-10) i napisanie opinii
+- **Edycja własnych recenzji** - Zmiana treści lub oceny swojej recenzji
+- **Usuwanie własnych recenzji** - Usunięcie swojej recenzji
+- **Profil użytkownika** - Przeglądanie wszystkich swoich recenzji
+
+#### Zgłoszenia
+- **Zgłaszanie recenzji** - Zgłoszenie nieodpowiedniej recenzji (spam, wulgaryzmy)
+- **Ograniczenia**:
+  - Nie może edytować/usuwać cudzych recenzji
+  - Nie może dodawać filmów
+  - Nie ma dostępu do panelu administratora
+
+---
+
+### Administrator
+
+Administrator ma **wszystkie uprawnienia użytkownika** oraz dodatkowo:
+
+#### Panel Administracyjny
+- **Dashboard zgłoszeń** - Przeglądanie wszystkich zgłoszeń użytkowników
+- **Zarządzanie zgłoszeniami** - Akceptacja/Odrzucenie zgłoszeń
+- **Moderacja recenzji** - Usuwanie nieodpowiednich recenzji
+
+#### Zarządzanie treścią
+- **Dodawanie filmów** - Dodanie nowych filmów do bazy
+- **Edycja filmów** - Zmiana informacji o filmach
+- **Usuwanie filmów** - Usunięcie filmu z bazy (wraz z recenzjami)
+
+#### Uprawnienia specjalne
+- **Usuwanie dowolnych recenzji** - Bez ograniczeń (nawet cudzych)
+- **Wgląd w zgłoszenia** - Pełna historia zgłoszeń
+- **Dostęp do endpointów `/reports`** - Specjalne API tylko dla admina
+
+---
 
 
 ## 🗄️ Struktura
